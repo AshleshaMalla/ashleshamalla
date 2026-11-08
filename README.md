@@ -1,15 +1,54 @@
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&duration=3200&pause=900&color=FF2A6D&center=true&vCenter=true&width=520&lines=%3E+hi%2C+i'm+ashlesha_;%3E+developer+%2F%2F+designer_;%3E+code+%2B+pixels+%2B+polygons_" alt="hi, i'm ashlesha" />
+</h1>
 
-## 🌐 Socials:
-[![Behance](https://img.shields.io/badge/Behance-1769ff?logo=behance&logoColor=white)](https://behance.net/@ashleshamalla1) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashleshamalla/) 
+<p align="center">
+  <code>developer</code> ✦ <code>designer</code> ✦ <code>3d tinkerer</code>
+</p>
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E) ![Adobe Illustrator](https://img.shields.io/badge/adobeillustrator-%23FF9A00.svg?style=flat&logo=adobeillustrator&logoColor=white) ![Adobe InDesign](https://img.shields.io/badge/Adobe%20InDesign-49021F?style=flat&logo=adobeindesign&logoColor=white) ![Adobe Photoshop](https://img.shields.io/badge/adobephotoshop-%2331A8FF.svg?style=flat&logo=adobephotoshop&logoColor=white) ![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=flat&logo=Adobe%20XD&logoColor=#FF61F6) 	![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=flat&logo=figma&logoColor=white) ![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=flat&logo=blender&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=AshleshaMalla&theme=radical&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=ashleshamalla&theme=radical&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ashleshamalla&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+### `> whoami`
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+I build things where code and design meet. I write C, C++ and JavaScript, design interfaces in Figma, and make 3D scenes in Blender. I like turning ideas into clean, usable things that look good.
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+### `> stack`
+
+| | |
+|:--|:--|
+| **code** | ![C](https://img.shields.io/badge/C-0a0a12?style=flat-square&logo=c&logoColor=05d9e8) ![C++](https://img.shields.io/badge/C++-0a0a12?style=flat-square&logo=cplusplus&logoColor=05d9e8) ![JavaScript](https://img.shields.io/badge/JavaScript-0a0a12?style=flat-square&logo=javascript&logoColor=05d9e8) ![HTML5](https://img.shields.io/badge/HTML5-0a0a12?style=flat-square&logo=html5&logoColor=05d9e8) ![CSS3](https://img.shields.io/badge/CSS3-0a0a12?style=flat-square&logo=css&logoColor=05d9e8) |
+| **design** | ![Figma](https://img.shields.io/badge/Figma-0a0a12?style=flat-square&logo=figma&logoColor=ff2a6d) ![Illustrator](https://img.shields.io/badge/Ai-Illustrator-0a0a12?style=flat-square&labelColor=ff2a6d) ![Photoshop](https://img.shields.io/badge/Ps-Photoshop-0a0a12?style=flat-square&labelColor=ff2a6d) ![InDesign](https://img.shields.io/badge/Id-InDesign-0a0a12?style=flat-square&labelColor=ff2a6d) ![Adobe XD](https://img.shields.io/badge/Xd-Adobe_XD-0a0a12?style=flat-square&labelColor=ff2a6d) |
+| **3d** | ![Blender](https://img.shields.io/badge/Blender-0a0a12?style=flat-square&logo=blender&logoColor=f9f871) |
+
+### `> stats`
+
+<!-- cool-readme:start -->
+<!-- Cards by github-cool-readme: https://github.com/pedrocatalao/github-cool-readme -->
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AshleshaMalla/AshleshaMalla/cards/summary-dark.svg">
+  <img src="https://raw.githubusercontent.com/AshleshaMalla/AshleshaMalla/cards/summary-light.svg" width="400" alt="GitHub stats">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AshleshaMalla/AshleshaMalla/cards/languages-dark.svg">
+  <img src="https://raw.githubusercontent.com/AshleshaMalla/AshleshaMalla/cards/languages-light.svg" width="400" alt="Most used languages">
+</picture>
+</p>
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AshleshaMalla/AshleshaMalla/cards/streaks-dark.svg">
+  <img src="https://raw.githubusercontent.com/AshleshaMalla/AshleshaMalla/cards/streaks-light.svg" width="400" alt="Streaks">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AshleshaMalla/AshleshaMalla/cards/weekly-dark.svg">
+  <img src="https://raw.githubusercontent.com/AshleshaMalla/AshleshaMalla/cards/weekly-light.svg" width="400" alt="Weekly rhythm">
+</picture>
+</p>
+<!-- cool-readme:end -->
+
+### `> connect`
+
+<p align="center">
+  <a href="https://behance.net/@ashleshamalla1"><img src="https://img.shields.io/badge/Behance-0a0a12?style=for-the-badge&logo=behance&logoColor=ff2a6d" alt="Behance" /></a>
+  <a href="https://www.linkedin.com/in/ashleshamalla/"><img src="https://img.shields.io/badge/in-LinkedIn-0a0a12?style=for-the-badge&labelColor=05d9e8" alt="LinkedIn" /></a>
+</p>
+
+<p align="center"><sub><code>// end of transmission_</code></sub></p>

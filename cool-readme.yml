@@ -1,0 +1,19 @@
+# Dot matrix stat cards, see https://github.com/pedrocatalao/github-cool-readme
+user: AshleshaMalla
+
+show: [summary, languages, streaks, weekly]
+
+count:
+  private: true
+  orgs: true
+
+look:
+  style: dotmatrix   # round neon LEDs over a faint grid of unlit ones
+  color: cyan        # #22e3ff, the closest built-in colour to neon cyan
+  background: 0a0a12 # near-black panel, same for every viewer
+
+cards:
+  languages:
+    count: 6
+  streaks:
+    title: Streaks
