@@ -1,4 +1,6 @@
-# README cards, see https://github.com/pedrocatalao/github-cool-readme
+# README cards (https://github.com/pedrocatalao/github-cool-readme) and the git-bonsai tree
+# (https://github.com/egorthinks/git-bonsai), all published on the cards branch so they never
+# add commits to main.
 name: Update README cards
 
 on:
@@ -6,32 +8,60 @@ on:
     - cron: '17 */2 * * *'   # every 2 hours
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
+  # The bonsai runs in its own job with a read-only token and no secrets, pinned to an exact
+  # commit, so a change to that third-party action can't reach CARDS_TOKEN or write to the repo.
+  bonsai:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: egorthinks/git-bonsai@665258cab3f304cfb33a96fc7bf108cec1f452f3 # v1.0.0
+        with:
+          output-dir: bonsai
+          commit: 'false'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bonsai
+          path: bonsai/
+          retention-days: 1
+
   cards:
+    needs: bonsai
+    if: ${{ !cancelled() }} # still update the cards if the bonsai fails
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: pedrocatalao/github-cool-readme@v1
         with:
           token: ${{ secrets.CARDS_TOKEN }}
           output: ${{ runner.temp }}/cards
-      # The cards live on their own branch, as a single commit replaced on each change, so they
-      # don't add to the history of your main branch.
-      - name: Publish the cards on the cards branch
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: bonsai
+          path: ${{ runner.temp }}/cards
+      # Everything lives on its own branch, as a single commit replaced on each change.
+      - name: Publish the cards and the bonsai on the cards branch
         run: |
-          # With "cards: []" in cool-readme.yml the cards are off, and there's nothing to publish.
-          if ! ls "$RUNNER_TEMP"/cards/*.svg >/dev/null 2>&1; then echo "No cards: they're off"; exit 0; fi
+          if ! ls "$RUNNER_TEMP"/cards/*.svg >/dev/null 2>&1; then echo "Nothing to publish"; exit 0; fi
           git fetch --quiet --depth 1 origin cards:refs/remotes/origin/cards 2>/dev/null || true # not there on the first run
+          # Keep the last bonsai if this run couldn't grow one.
+          if [ ! -f "$RUNNER_TEMP"/cards/bonsai.gif ]; then
+            for f in bonsai.svg bonsai.png bonsai.gif bonsai-growth.gif; do
+              git show "origin/cards:$f" > "$RUNNER_TEMP/cards/$f" 2>/dev/null || rm -f "$RUNNER_TEMP/cards/$f"
+            done
+          fi
           git switch --quiet --orphan cards
-          cp "$RUNNER_TEMP"/cards/*.svg .
-          git add -- *.svg
+          cp "$RUNNER_TEMP"/cards/* .
+          git add -A # only the copied files: switching to an orphan branch removed main's
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit --quiet -m 'Update README cards'
+          git commit --quiet -m 'Update README cards and bonsai'
           if git rev-parse --quiet --verify origin/cards >/dev/null && git diff --quiet origin/cards HEAD; then
             echo "No changes"
             exit 0
