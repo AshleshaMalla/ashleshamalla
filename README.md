@@ -4,11 +4,7 @@
 
 ### `> whoami`
 
-<img align="right" src="https://raw.githubusercontent.com/AshleshaMalla/AshleshaMalla/cards/bonsai.gif" width="220" alt="My git-bonsai, grown from my GitHub history" />
-
 I'm a PhD student in Computer Science at **Texas Tech University**. My research is in high-performance computing and parallel systems, with a focus on running AI workloads on GPU clusters. Outside research, I also design interfaces and visuals in Figma and the Adobe suite.
-
-<br clear="right" />
 
 ### `> stack`
 
